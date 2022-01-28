@@ -21,26 +21,25 @@ spam_chats = []
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-    "__**I'm Mention Robot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@SOCIAL-MECHANIC](https://github.com/SOCIAL-MECHANIC-TEAM-NRD) on Github",
+    "__**I'm Mention Robot**, I can mention almost all members in group or channel 👻\nClick **/help** for more information__\n\n Follow [@KAAL_TOTNADO_NETWORK](https://t.me/KAAL_TORNADO_NETWORK) on Telegram",
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/TECHNOLOGY_CORNER_1'),
-        Button.url('📦 Source', 'https://github.com/SOCIAL-MECHANIC-TEAM-NRD/MENTION-ROBOT')
+        Button.url('📣 Channel', 'https://t.me/KAAL_TORNADO_NETWORK'),
+        Button.url('📦 Clan', 'https://t.me/KAAL_TORNADO_RIDERS')
       ]
     )
   )
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@SOCIAL-MECHANIC](https://github.com/SOCIAL-MECHANIC-TEAM-NRD/) on Github"
-  await event.reply(
+  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [@KAAL_TOTNADO_NETWORK](https://t.me/KAAL_TORNADO_NETWORK) on Telegram",
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/TECHNOLOGY_CORNER_1'),
-        Button.url('📦 Source', 'https://github.com/SOCIAL-MECHANIC-TEAM-NRD/MENTION-ROBOT')
+        Button.url('📣 Channel', 'https://t.me/KAAL_TORNADO_NETWORK'),
+        Button.url('📦 Source', 'https://t.me/KAAL_TORNADO_RIDERS')
       ]
     )
   )
